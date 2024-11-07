@@ -1,0 +1,120 @@
+.Wrapper {
+    width: 1200px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, #161a1f, #161a1f), #161a1f;
+}
+
+.Inner {
+    width: 900px;
+    height: 600px;
+    background: linear-gradient(0deg, #161a1f, #161a1f), #161a1f;
+}
+
+.Hender {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    height: 50px;
+}
+.Hender div {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.Hender button {
+    background-color: #2490ef;
+    padding: 10px;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 10px;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+.Info {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Wrapper-info {
+    width: 900px;
+    height: 200px;
+    border: 1px solid #c5c4c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Background+Shadow */
+
+    /* 27.71.235.36/Shark */
+    background: #1c2126;
+    box-shadow: 0px 1px 2px rgba(25, 39, 52, 0.05), 0px 0px 4px rgba(25, 39, 52, 0.1);
+    border-radius: 8px;
+}
+
+.Info-staff {
+    color: #fff;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.Inner-Number {
+    display: flex;
+    justify-content: space-between;
+}
+.serchResutl {
+    width: 400px;
+    background-color: #fff;
+}
+.serchResutl h5 {
+    padding: 10px;
+    font-size: 14px;
+    &:hover {
+        background-color: #c5c4c4;
+    }
+}
+.Number-CD {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.Number-CDD {
+    display: flex;
+    justify-content: space-between;
+}
+.Number-CD select {
+    width: 400px;
+    padding: 6px;
+    // background-color: #8a8787;
+    border-radius: 5px;
+    outline: none;
+}
+.Number-CD input {
+    width: 400px;
+    padding: 6px;
+    // background-color: #8a8787;
+    border-radius: 5px;
+}
+input[tabindex] {
+    pointer-events: none;
+    user-select: none;
+}
+.Number {
+    color: #c5c4c4;
+    font-size: 12px;
+}
+input[readOnly] {
+    z-index: 999;
+}
+
+.error {
+    color: rgb(250, 2, 2);
+    margin-top: 5px;
+    font-size: 12px;
+}
+//date

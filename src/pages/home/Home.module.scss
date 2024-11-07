@@ -1,0 +1,74 @@
+.Wrapper {
+    /* Home */
+    height: 539px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Home {
+    /* Group 2 */
+    box-sizing: border-box;
+    width: 697px;
+    height: 539px;
+    background: #ffffff;
+    mix-blend-mode: darken;
+    border: 1px solid #1ca1b4;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    background-color: #e5e4e4;
+}
+.Hender {
+    /* Group 2 */
+    /* Rectangle 2 */
+
+    box-sizing: border-box;
+    width: 697px;
+    height: 55px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d9d9d9;
+    border: 1px solid rgba(28, 161, 180, 0.9);
+}
+.Menu {
+    /* Menu */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 31px;
+    position: absolute;
+    width: 385px;
+    height: 349px;
+    left: 178px;
+    top: 135px;
+
+    /* Auto layout */
+}
+
+.Menu div {
+    /* Rectangle 6 */
+    text-align: center;
+    line-height: 45px;
+    box-sizing: border-box;
+    width: 385px;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+    background: #d9d9d9;
+    border: 1px solid #1ca1b4;
+    border-radius: 2px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    &:hover {
+        background-color: #ffffff;
+    }
+}
+.Content {
+    color: #000;
+}

@@ -1,0 +1,199 @@
+.Wrapper {
+    /* PC */
+
+    width: 100%;
+    height: 900px;
+    overflow-y: scroll;
+
+    /* 27.71.235.36/Woodsmoke Woodsmoke */
+    background: linear-gradient(0deg, #161a1f, #161a1f), #161a1f;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Interface {
+    width: 900px;
+    height: 700px;
+    background: #1c2126;
+}
+
+.Hender {
+    /* Container */
+
+    /* Auto layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    width: 900px;
+    max-width: 1290px;
+    height: 75px;
+
+    /* Inside auto layout */
+
+    order: 0;
+
+    background: linear-gradient(0deg, #161a1f, #161a1f), #161a1f;
+}
+.Hender {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    height: 75px;
+}
+.Title {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.ADD {
+    display: flex;
+    margin-right: 20px;
+}
+.Icon {
+    background: #353a3f;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    margin-right: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.Hender button {
+    padding: 10px;
+    background-color: #2490ef;
+    border-radius: 5px;
+    &:hover {
+        opacity: 0.9;
+    }
+    .Link-add {
+        color: #fff;
+    }
+}
+.List {
+    width: 900px;
+    height: 625px;
+    border-radius: 4px;
+    position: relative;
+}
+.List-input {
+    /* Background+HorizontalBorder */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 0px;
+    align-items: center;
+    width: 900px;
+    height: 60.5px;
+
+    /* 27.71.235.36/Shark */
+    background: #1c2126;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    border-bottom: 1px solid #383a3b;
+}
+.Input-title {
+    display: flex;
+}
+.Input-title input {
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 100px;
+    background: #383a3b;
+    color: #b9b4b4;
+}
+.Down {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 163.53px;
+    height: 29.5px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.List-icon {
+    color: #fff;
+    background-color: #000;
+    padding: 3px;
+    border: 1px solid #353a3f;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+.Down button {
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.List-staff {
+    width: 900px;
+}
+
+.Name tr {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #817f7f;
+    padding: 5px;
+}
+.Name tr th {
+    color: #817f7f;
+}
+.Name tr td {
+    color: #fff;
+    margin-top: 10px;
+}
+.Name tr td:nth-child(4) .Edit,
+span {
+    color: red;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.Edit {
+    color: red;
+}
+
+.Page {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+}
+.Page button {
+    padding: 10px;
+    border: 1px solid #383a3b;
+    background-color: #1e1e1f;
+    color: #fff;
+}
+.Page button:nth-child(1) {
+    background-color: #909494;
+}
