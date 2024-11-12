@@ -120,6 +120,16 @@
     background: #383a3b;
     color: #b9b4b4;
 }
+.List-emloypee {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
 .Down {
     /* Auto layout */
     display: flex;
@@ -158,10 +168,13 @@
 }
 
 .Name tr {
-    display: flex;
-    justify-content: space-around;
     border-bottom: 1px solid #817f7f;
     padding: 5px;
+}
+.Name tr th,
+.Name tr td {
+    padding-top: 15px;
+    padding-left: 30px;
 }
 .Name tr th {
     color: #817f7f;

@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './Content.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDownWideShort, faEllipsis } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDownWideShort, faEllipsis, faList } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Tippy from '@tippyjs/react';
@@ -12,10 +12,14 @@ function Content() {
     const [local, setLocal] = useState(empLocal || []);
 
     const handleDelete = (index) => {
-        const setName = local.filter((emp, i) => i !== index);
-        setLocal(setName);
+        // const isConfirm = confirm('Bạn chắc chắn có muốn xóa không?');
+        // if (isConfirm) {
+            const setName = local.filter((emp, i) => i !== index);
 
-        localStorage.setItem('empLocal', JSON.stringify(setName));
+            setLocal(setName);
+
+            localStorage.setItem('empLocal', JSON.stringify(setName));
+        // }
     };
 
     return (
@@ -42,6 +46,13 @@ function Content() {
                             <input placeholder="Tên" />
                             <input placeholder="Nhân Viên" />
                             <input placeholder="Phân Lương" />
+
+                            <Tippy content="Xem Danh Sách">
+                                <a href="/list" className={cx('List-emloypee')}>
+                                    {' '}
+                                    <FontAwesomeIcon icon={faList} />
+                                </a>
+                            </Tippy>
                         </div>
                         <div className={cx('Down')}>
                             <div className={cx('List-icon')}>
@@ -56,6 +67,7 @@ function Content() {
                                 <th>Nhân viên</th>
                                 <th>Tên Nhân viên</th>
                                 <th>Tên</th>
+                                <th>Ngày</th>
                                 <th></th>
                             </tr>
                             {local.map((list, index) => (
@@ -63,11 +75,12 @@ function Content() {
                                     <td key={list.ID}>{list.ID}</td>
                                     <td key={list.ID}>{list.NAME}</td>
                                     <td key={list.ID}>{list.CODE}</td>
+                                    <td key={list.ID}>{list.DATE}</td>
                                     <td>
                                         <Link to={`/sua/${list.ID}`} className={cx('Edit')}>
-                                           <> Sửa</>
+                                            <> Sửa</>
                                         </Link>
-                                        
+
                                         <span style={{ marginLeft: '10px' }} onClick={() => handleDelete(index)}>
                                             Xóa
                                         </span>
